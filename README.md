@@ -1,39 +1,53 @@
 # 🕵️‍♀️ Secret Message Hackathon Challenge
 
-This repository contains my solution to a fun and brain-teasing hackathon challenge hosted by **Data Annotation**.
+[![Python Version](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/)
+[![Repo Stars](https://img.shields.io/github/stars/ThakurAyushi404/secret-message-Hackthonchallenge?style=social)](https://github.com/ThakurAyushi404/secret-message-Hackthonchallenge/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/ThakurAyushi404/secret-message-Hackthonchallenge)](https://github.com/ThakurAyushi404/secret-message-Hackthonchallenge/commits/main)
+
+This repository contains my solution to an exciting coding challenge from the **Data Annotation Hackathon**. The goal was to decode a hidden message embedded in a public Google Doc using `(x, y)` coordinates and visual characters (`█`, `░`). It combined web scraping, parsing, and creative grid mapping!
+
+---
 
 ## 🎯 Challenge Objective
 
-Decode a hidden message from a public Google Doc that contains:
-- (x, y) coordinates
-- Characters (`█`, `░`)
+- Extract data from a public Google Doc
+- Parse `(x, y)` coordinate and character data
+- Plot characters on a 2D grid
+- Reveal the hidden message
+
+---
 
 ## 🧠 My Approach
 
-1. Scraped the public Google Doc using Python (`requests`, `BeautifulSoup`)
-2. Parsed the data and mapped it onto a 2D grid
-3. Printed the output grid to reveal the secret message
+1. Scraped the doc using `requests` + `BeautifulSoup`
+2. Mapped characters to coordinates using Python
+3. Printed a grid of characters to visualize the secret message
 
-✅ **Decoded Message:** `KICMEDB`
+✅ **Decoded Secret Message:*KICMEDB*
 
-## 🔧 Tools & Technologies
-- Python
+🧩 Final Output: **KICMEDB**
+
+---
+
+## 🛠 Tech Stack
+
+- Python 3.10+
 - requests
-- BeautifulSoup
-- Grid logic using nested lists
+- beautifulsoup4
 
+---
 ## 🖼️ Screenshots
 
 ### 📥 Input Snippet from Google Doc
-![Input Screenshot](screenshots/input.png)
+![Input Screenshot](input.png)
 
 ### 📤 Output Grid
-![Output Screenshot](screenshots/output.png)
-
-## 🚀 How to Run It Locally
+![Output Screenshot](output.png)
+## 🚀 How to Run
 
 ```bash
 git clone https://github.com/ThakurAyushi404/secret-message-Hackthonchallenge.git
 cd secret-message-Hackthonchallenge
 pip install -r requirements.txt
 python decode.py
+
